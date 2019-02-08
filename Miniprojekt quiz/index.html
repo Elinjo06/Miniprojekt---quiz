@@ -1,57 +1,139 @@
   <!doctype html>
   <html lang="sv">
-    <head>
-      <!-- Required meta tags -->
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-      <!-- Bootstrap CSS -->
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-      <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
 
-      <title>Miniprojekt Quiz</title>
-    </head>
-    <body>
+    <title>Miniprojekt Quiz</title>
+  </head>
+  <body>
     <div class="contanier">
       <h1>Landskaps quiz</h1>
-      <!--Fråge kort-->
-      <div id="val" name="fraga1">
-      <form id="fragor" name="fragor">
-        <div class="card border-success mb-3" style="max-width: 18rem;">
-          <div class="card-body text-success">
-            <img src="bilder/bsten.jpg" class="card-img-top" alt="...">
-            <p class="card-text">Vilket landskap har kustgnejs som landskapssten?</p>
-          
-          <!---Svars alternativ alternativ-->
-          <!--Nummer 1-->
-          <input id="fv" name="fraga1" type="radio" value="smaland">Småland<br>
-          <!--Nummer 2-->
-          <input id="fv" name="fraga1" type="radio" value="blekinge">Bleknige<br>
-          <!--Nummer 3-->
-          <input id="fv" name="fraga1" type="radio" value="skane">Skåne<br>
-    
-        <!--Svars knapp-->
-        <p></p>
-        <div>
-          <button id="knapp" type="button" class="btn btn-success" onclick="kontrol()">Svara!</button>
+      <div class="card-group">
+      <!--Fråge kort 1-->
+      <div id="val1" name="val1">
+        <form id="fragor" name="fragor">
+          <div class="card border-success mb-3" style="max-width: 18rem;">
+            <div class="card-header">Fråga 1</div>
+            <div class="card-body text-success">
+              <img src="bilder/bsten.jpg" class="card-img-top" alt="...">
+              <p class="card-text">Vilket landskap har kustgnejs som landskapssten?</p>
+
+              <!---Svars alternativ alternativ-->
+              <!--Nummer 1-->
+              <input id="fv" name="val1" type="radio" value="smaland">Småland<br>
+              <!--Nummer 2-->
+              <input id="fv" name="val1" type="radio" value="blekinge">Blekinge<br>
+              <!--Nummer 3-->
+              <input id="fv" name="val1" type="radio" value="skane">Skåne<br>
+
+            </div>
+          </div>
+        </div>
+
+        <!--frågekort 2 -->
+        <div id="val2" name="val2">
+          <div class="card border-success mb-3" style="max-width: 18rem;">
+            <div class="card-header">Fråga 2</div>
+            <div class="card-body text-success">
+              <img src="bilder/lilja.JPG" class="card-img-top" alt="...">
+              <p class="card-text">Vilket landskap har kungsängslilja som landskapsblomma?</p>
+
+              <!---Svars alternativ alternativ-->
+              <!--Nummer 1-->
+              <input id="fv" name="val2" type="radio" value="uppland">Uppland<br>
+              <!--Nummer 2-->
+              <input id="fv" name="val2" type="radio" value="oland">Öland<br>
+              <!--Nummer 3-->
+              <input id="fv" name="val2" type="radio" value="dalarna">Dalarna<br>
+            </div>
+          </div>
+        </div>
+
+        <!--Fråge kort 3 -->
+        <div id="val3" name="val3">
+          <div class="card border-success mb-3" style="max-width: 18rem;">
+            <div class="card-header">Fråga 3</div>
+            <div class="card-body text-success">
+              <img src="bilder/gääpple.jpg" class="card-img-top" alt="...">
+              <p class="card-text">Vilket landskap har malmbergs gylling som landskapsäpple?</p>
+              
+              <!---Svars alternativ alternativ-->
+              <!--Nummer 1-->
+              <input id="fv" name="val3" type="radio" value="halland">Halland<br>
+              <!--Nummer 2-->
+              <input id="fv" name="val3" type="radio" value="gastrikland">Gästrikland<br>
+              <!--Nummer 3-->
+              <input id="fv" name="val3" type="radio" value="narke">Närke<br>
+            </div>
+          </div>
+        </div>
+
+        <!--Fråge kort 4 -->
+        <div id="val4" name="val4">
+          <div class="card border-success mb-3" style="max-width: 18rem;">
+            <div class="card-header">Fråga 4</div>
+            <div class="card-body text-success">
+              <img src="bilder/troll.jpg" class="card-img-top" alt="...">
+              <p class="card-text">Vilket landskap har troll som landskapsväsen?</p>
+              
+              <!---Svars alternativ alternativ-->
+              <!--Nummer 1-->
+              <input id="fv" name="val4" type="radio" value="lappland">Lappland<br>
+              <!--Nummer 2-->
+              <input id="fv" name="val4" type="radio" value="jämtland">Jämtland<br>
+              <!--Nummer 3-->
+              <input id="fv" name="val4" type="radio" value="smaland">Småland<br>
+            </div>
+          </div>
+        </div>
+
+         <!--Fråge kort 5 -->
+        <div id="val4" name="val5">
+          <div class="card border-success mb-3" style="max-width: 18rem;">
+            <div class="card-header">Fråga 5</div>
+            <div class="card-body text-success">
+              <img src="bilder/Ölands_vapen.svg.png" class="card-img-top" alt="...">
+              <p class="card-text">Vilket landskap har denna sköld som landskapsvapen?</p>
+              
+              <!---Svars alternativ alternativ-->
+              <!--Nummer 1-->
+              <input id="fv" name="val5" type="radio" value="oland">Öland<br>
+              <!--Nummer 2-->
+              <input id="fv" name="val5" type="radio" value="vasterbotten">Västerbotten<br>
+              <!--Nummer 3-->
+              <input id="fv" name="val5" type="radio" value="vastmanland">Västmanland<br>
+            </div>
           </div>
         </div>
         </div>
-        </form>
+
+        <!--Svars knapp-->
+        <p></p>
       </div>
+    </form>
 
 
-      <div id="tryckt">
-        <p id="rätnummer">Du gjorde rätt</p>
-      </div>
-      </div>
+    <div>
+      <button id="knapp" type="button" class="btn btn-success" onclick="kontroll()">Svara!</button>
+    </div>
+    <div id="tryckt">
+      <p id="ratantal"> </p>
+    </div>
+  </div>
+</div>
 
-      <!-- Optional JavaScript -->
-      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-      <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
-      <script type="text/javascript" src="script.js"></script>
-    </body>
-    </html>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

@@ -5,3 +5,9 @@ body{
 .contanier{
 	padding: 20px;
 }
+
+#tryckt{
+	visibility: hidden;
+}
+
+

@@ -1,13 +1,19 @@
 body{
 	font-family: Arial;
+	margin: auto;
 }
 
 .contanier{
 	padding: 20px;
+	margin: auto;
 }
 
 #tryckt{
 	visibility: hidden;
+}
+
+.btn{
+	margin-left: 20px;
 }
 
 
